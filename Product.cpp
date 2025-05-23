@@ -3,7 +3,7 @@
 Product::Product(){
     price = 0.0;
     ID = 0; 
-    name = "";
+    name = " ";
     discountApplied = 0.0;
 }
 

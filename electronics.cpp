@@ -3,7 +3,10 @@
 using namespace std;
 
 
-Electronics::Electronics(){}
+Electronics::Electronics() : Product(){
+    brand = " ";
+    warranty = " ";
+}
 
 Electronics::Electronics(float price,int ID,string name,
     float discountApplied,string brand,

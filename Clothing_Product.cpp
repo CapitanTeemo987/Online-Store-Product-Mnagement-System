@@ -3,7 +3,10 @@
 #include <string>
 using namespace std;
 
-Clothing_Product::Clothing_Product(){}
+Clothing_Product::Clothing_Product() : Product(){
+    fabric = " ";
+    size = " ";
+}
 
 // Overloaded constructor
 Clothing_Product::Clothing_Product(float price,int ID,string name,
