@@ -28,3 +28,7 @@ Electronics::set_brand(string brand){
 Electronics::set_warranty(string warranty){
     this->warranty = warranty;
 }
+
+Electronics::ApplyDiscount(float price,float discountApplied){
+    return (price - discountApplied) * 0.95;
+}
