@@ -17,5 +17,6 @@ class Electronics:public Product{
         string get_warranty();
         void set_brand(string);
         void set_warranty(string);
+        float ApplyDiscount(float, float) override; 
 
 };
