@@ -11,7 +11,7 @@ class Electronics:public Product{
 
     public:
         Electronics();
-        Electronics(float,int,string,float,float,string,string);
+        Electronics(float,int,string,float,string,string);
 
         string get_brand();
         string get_warranty();
