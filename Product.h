@@ -1,5 +1,5 @@
 #ifndef PRODUCT_H
-#define PRORUCT_H
+#define PRODUCT_H
 #include <string>
 
 class Product{

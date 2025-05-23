@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ELECTRONICS_H
+#define ELECTRONICS_H
 #include "Product.h"
 #include <string>
 using namespace std;
@@ -20,3 +21,5 @@ class Electronics:public Product{
         float ApplyDiscount(float, float) override; 
 
 };
+
+#endif

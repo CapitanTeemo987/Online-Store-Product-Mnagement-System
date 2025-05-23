@@ -17,11 +17,11 @@ int main(){
     cout<<"Warranty: "<<electroincs.get_warranty()<<endl;
     cout<<"Discount Applied: "<<electroincs.GetDiscountApplied()<<endl;
     
-    float discountWithTaxes = electroincs.ApplyDiscount(electroincs.GetPrice(), electroincs.GetDiscountApplied());
-    float discountWithoutTaxes = product.ApplyDiscount(electroincs.GetFinalPrice(), electroincs.GetDiscountApplied());
+    float discountWithTaxesElectronics = electroincs.ApplyDiscount(electroincs.GetPrice(), electroincs.GetDiscountApplied());
+    float discountWithoutTaxesElectronics = product.ApplyDiscount(electroincs.GetFinalPrice(), electroincs.GetDiscountApplied());
 
-    cout<<"Discount without taxes: "<<discountWithoutTaxes<<endl;
-    cout<<"Discount with taxes: "<<discountWithTaxes<<endl;
+    cout<<"Discount without taxes: "<<discountWithoutTaxesElectronics<<endl;
+    cout<<"Discount with taxes: "<<discountWithTaxesElectronics<<endl;
 
     cout<<"\n\n\n--- Product Information ---"<<endl;
 
@@ -32,11 +32,11 @@ int main(){
     cout<<"Size: "<<clothing_Product.get_size()<<endl;
     cout<<"Discount Applied: "<<clothing_Product.GetDiscountApplied()<<endl;
     
-    float discountWithTaxes = clothing_Product.ApplyDiscount(clothing_Product.GetPrice(), clothing_Product.GetDiscountApplied());
-    float discountWithoutTaxes = product.ApplyDiscount(clothing_Product.GetFinalPrice(), clothing_Product.GetDiscountApplied());
+    float discountWithTaxesClothing = clothing_Product.ApplyDiscount(clothing_Product.GetPrice(), clothing_Product.GetDiscountApplied());
+    float discountWithoutTaxesClothing = product.ApplyDiscount(clothing_Product.GetFinalPrice(), clothing_Product.GetDiscountApplied());
 
-    cout<<"Discount without taxes: "<<discountWithoutTaxes<<endl;
-    cout<<"Discount with taxes: "<<discountWithTaxes<<endl;
+    cout<<"Discount without taxes: "<<discountWithoutTaxesClothing<<endl;
+    cout<<"Discount with taxes: "<<discountWithTaxesClothing<<endl;
 
 
 
