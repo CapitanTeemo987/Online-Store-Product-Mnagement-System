@@ -37,6 +37,10 @@ float Product::GetFinalPrice(){
     return finalPrice;
 }
 
+float Product::GetFinalPrice(float Taxes){
+    return finalPrice * (1 + Taxes);
+}
+
 //Setters
 void Product::SetPrice(int Price){
     this->price = price;

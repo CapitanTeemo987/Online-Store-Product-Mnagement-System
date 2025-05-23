@@ -20,7 +20,11 @@ class Product{
         int Getid();
         std::string GetName();
         float GetDiscountApplied();
+
+        //Overloading
         float GetFinalPrice();
+        float GetFinalPrice(float);
+        
 
         //Setters
         void SetPrice(int);
@@ -28,7 +32,7 @@ class Product{
         void SetFinalPrice(float);
 
         //Other methods
-        float ApplyDiscount(float, float);
+        virtual float ApplyDiscount(float, float);
 };
 
 #endif
