@@ -5,12 +5,12 @@
 class Product{
     
     protected:
-        float Price;
+        float price;
         int ID;
-        std::string Name; 
-        float DiscountApplied;
-        float FinalPrice; 
-    
+        std::string name; 
+        float discountApplied;
+        float finalPrice; 
+
     public:
         Product();
         Product(float, int, std::string, float, float);

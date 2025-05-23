@@ -1,24 +1,24 @@
 #include "Product.h"
 
 Product::Product(){
-    Price = 0.0;
+    price = 0.0;
     ID = 0; 
-    Name = "";
-    DiscountApplied = 0.0;
-    FinalPrice = 0.0;  
+    name = "";
+    discountApplied = 0.0;
+    finalPrice = 0.0;  
 }
 
-Product::Product(float Price, int ID, std::string Name, float DiscountApplied, float Finalprice){
-    this->Price = Price;
+Product::Product(float price, int ID, std::string name, float discountApplied, float finalprice){
+    this->price = price;
     this->ID = ID;
-    this->Name = Name;
-    this->DiscountApplied = DiscountApplied;
-    this->FinalPrice = FinalPrice;
+    this->name = name;
+    this->discountApplied = discountApplied;
+    this->finalPrice = finalPrice;
 }
 
 //Getters
 float Product::GetPrice(){
-    return Price;
+    return price;
 }
 
 int Product::Getid(){
@@ -26,30 +26,30 @@ int Product::Getid(){
 }
 
 std::string Product::GetName(){
-    return Name;
+    return name;
 }
 
 float Product::GetDiscountApplied(){
-    return DiscountApplied;
+    return discountApplied;
 }
 
 float Product::GetFinalPrice(){
-    return FinalPrice;
+    return finalPrice;
 }
 
 //Setters
 void Product::SetPrice(int Price){
-    this->Price = Price;
+    this->price = price;
 }
 
-void Product::SetDiscountApplied(float DiscountApplied){
-    this->DiscountApplied = DiscountApplied;
+void Product::SetDiscountApplied(float discountApplied){
+    this->discountApplied = discountApplied;
 }
 
-void Product::SetFinalPrice(float FinalPrice){
-    this->FinalPrice = FinalPrice;
+void Product::SetFinalPrice(float finalPrice){
+    this->finalPrice = finalPrice;
 }
 
-float ApplyDiscount(float Price, float DiscountApplied){
-    return (Price - DiscountApplied);
+float ApplyDiscount(float price, float discountApplied){
+    return (price - discountApplied);
 }
