@@ -27,7 +27,7 @@ class Product{
         
 
         //Setters
-        void SetPrice(int);
+        void SetPrice(float);
         void SetDiscountApplied(float);
         void SetFinalPrice(float);
 

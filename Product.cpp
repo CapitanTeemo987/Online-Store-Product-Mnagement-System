@@ -5,6 +5,7 @@ Product::Product(){
     ID = 0; 
     name = " ";
     discountApplied = 0.0;
+    finalPrice = 0.0;
 }
 
 Product::Product(float price, int ID, std::string name, float discountApplied){
@@ -12,6 +13,7 @@ Product::Product(float price, int ID, std::string name, float discountApplied){
     this->ID = ID;
     this->name = name;
     this->discountApplied = discountApplied;
+    this->finalPrice = price;
 }
 
 //Getters
@@ -40,7 +42,7 @@ float Product::GetFinalPrice(float Taxes){
 }
 
 //Setters
-void Product::SetPrice(int Price){
+void Product::SetPrice(float price){
     this->price = price;
 }
 
@@ -52,6 +54,6 @@ void Product::SetFinalPrice(float finalPrice){
     this->finalPrice = finalPrice;
 }
 
-float ApplyDiscount(float price, float discountApplied){
+float Product::ApplyDiscount(float price, float discountApplied){
     return (price - discountApplied);
 }

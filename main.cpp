@@ -6,19 +6,19 @@ using namespace std;
 
 int main(){
     Product product;
-    Electronics electroincs(5000.00,1,"TV",150,"Samsumg","1_año");
+    Electronics electronics(5000.00,1,"TV",150,"Samsumg","1_año");
     Clothing_Product clothing_Product(3000.00,2,"Shirt",100,"Cotton","M");
     cout<<"--- Product Information ---"<<endl;
 
 
-    cout<<"Name: "<<electroincs.GetName()<<endl;
-    cout<<"Price: "<<electroincs.GetPrice()<<endl;
-    cout<<"Brand: "<<electroincs.get_brand()<<endl;
-    cout<<"Warranty: "<<electroincs.get_warranty()<<endl;
-    cout<<"Discount Applied: "<<electroincs.GetDiscountApplied()<<endl;
+    cout<<"Name: "<<electronics.GetName()<<endl;
+    cout<<"Price: "<<electronics.GetPrice()<<endl;
+    cout<<"Brand: "<<electronics.get_brand()<<endl;
+    cout<<"Warranty: "<<electronics.get_warranty()<<endl;
+    cout<<"Discount Applied: "<<electronics.GetDiscountApplied()<<endl;
     
-    float discountWithTaxesElectronics = electroincs.ApplyDiscount(electroincs.GetPrice(), electroincs.GetDiscountApplied());
-    float discountWithoutTaxesElectronics = product.ApplyDiscount(electroincs.GetFinalPrice(), electroincs.GetDiscountApplied());
+    float discountWithTaxesElectronics = electronics.ApplyDiscount(electronics.GetPrice(), electronics.GetDiscountApplied());
+    float discountWithoutTaxesElectronics = product.ApplyDiscount(electronics.GetFinalPrice(), electronics.GetDiscountApplied());
 
     cout<<"Discount without taxes: "<<discountWithoutTaxesElectronics<<endl;
     cout<<"Discount with taxes: "<<discountWithTaxesElectronics<<endl;

@@ -16,6 +16,7 @@ class Clothing_Product:public Product {
         void set_fabric(string); 
         string get_size();
         void set_size(string);
+        float ApplyDiscount(float, float) override;
 };  
 
 #endif

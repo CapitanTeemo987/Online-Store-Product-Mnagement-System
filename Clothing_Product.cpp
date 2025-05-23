@@ -32,3 +32,7 @@ string Clothing_Product::get_fabric() {
 string Clothing_Product::get_size(){
     return size;
 } 
+
+float Clothing_Product::ApplyDiscount(float price, float discountApplied){
+    return (price - discountApplied) * 0.80;
+}
