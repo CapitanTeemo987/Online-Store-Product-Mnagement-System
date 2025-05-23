@@ -5,15 +5,13 @@ Product::Product(){
     ID = 0; 
     name = "";
     discountApplied = 0.0;
-    finalPrice = 0.0;  
 }
 
-Product::Product(float price, int ID, std::string name, float discountApplied, float finalprice){
+Product::Product(float price, int ID, std::string name, float discountApplied){
     this->price = price;
     this->ID = ID;
     this->name = name;
     this->discountApplied = discountApplied;
-    this->finalPrice = finalPrice;
 }
 
 //Getters

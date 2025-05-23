@@ -9,11 +9,11 @@ class Product{
         int ID;
         std::string name; 
         float discountApplied;
-        float finalPrice; 
+        float finalPrice;
 
     public:
         Product();
-        Product(float, int, std::string, float, float);
+        Product(float, int, std::string, float);
 
         //Getters
         float GetPrice();
